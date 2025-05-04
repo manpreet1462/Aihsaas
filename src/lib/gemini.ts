@@ -2,7 +2,8 @@
 import { GoogleGenerativeAI } from '@google/generative-ai';
 
 // Ensure the API key is available
-const apiKey = process.env.GEMINI_API;
+const apiKey = process.env.NEXT_PUBLIC_GEMINI_API;
+console.log("zzzzzzzzz",apiKey)
 if (!apiKey) {
   throw new Error("GEMINI_URL environment variable is not defined");
 }
